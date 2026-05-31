@@ -1,0 +1,152 @@
+{
+  "id": "workout1",
+  "name": "John Reed Upper 1",
+  "date": "2024-05-01",
+  "exercises": [
+    {
+      "id": "exercise1",
+      "name": "DB Press",
+      "variation": ["Flat"],
+      "sets": [
+        {
+          "id": "set1",
+          "reps": 10,
+          "weight": 30,
+          "index": 0
+        },
+        {
+          "id": "set2",
+          "reps": 10,
+          "weight": 30,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "exercise2",
+      "name": "Machine Row",
+      "variation": ["Chest-Supported", "Seated", "Neutral Grip"],
+      "sets": [
+        {
+          "id": "set3",
+          "reps": 9.5,
+          "weight": 105,
+          "index": 0
+        },
+        {
+          "id": "set4",
+          "reps": 8.5,
+          "weight": 105,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "exercise3",
+      "name": "DB Press",
+      "variation": ["High-Incline", "Supinated Grip"],
+      "sets": [
+        {
+          "id": "set3",
+          "reps": 10,
+          "weight": 22,
+          "index": 0
+        },
+        {
+          "id": "set4",
+          "reps": 8,
+          "weight": 2,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "exercise4",
+      "name": "DB Lateral Raise",
+      "variation": ["Seated", "Back-Supported"],
+      "sets": [
+        {
+          "id": "set5",
+          "reps": 9.5,
+          "weight": 12,
+          "index": 0
+        },
+        {
+          "id": "set6",
+          "reps": 8.5,
+          "weight": 12,
+          "index": 1
+        },
+        {
+          "id": "set7",
+          "reps": 7.5,
+          "weight": 12,
+          "index": 2
+        }
+      ]
+    },
+    {
+      "id": "exercise5",
+      "name": "DB Rear Delt Fly",
+      "variation": ["Standing"],
+      "sets": [
+        {
+          "id": "set8",
+          "reps": 7.5,
+          "weight": 12,
+          "index": 0
+        },
+        {
+          "id": "set9",
+          "reps": 7.5,
+          "weight": 12,
+          "index": 1
+        },
+        {
+          "id": "set10",
+          "reps": 6.5,
+          "weight": 12,
+          "index": 2
+        }
+      ]
+    },
+    {
+      "id": "exercise6",
+      "name": "JM Press",
+      "variation": ["W-Bar"],
+      "sets": [
+        {
+          "id": "set11",
+          "reps": 7,
+          "weight": 32.5,
+          "index": 0
+        },
+        {
+          "id": "set12",
+          "reps": 6,
+          "weight": 32.5,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "id": "exercise7",
+      "name": "DB Curl",
+      "variation": ["Alternating"],
+      "sets": [
+        {
+          "id": "set13",
+          "reps": 7,
+          "weight": 18,
+          "index": 0
+        },
+        {
+          "id": "set14",
+          "reps": 6,
+          "weight": 18,
+          "index": 1
+        }
+      ]
+    }
+  ]
+}

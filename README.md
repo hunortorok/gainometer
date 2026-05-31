@@ -1,87 +1,124 @@
-# Welcome to React Router!
+# Gainometer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern workout tracking web app built as a frontend engineering portfolio project. Gainometer is designed to demonstrate type-safe form handling, component-driven UI design, and an offline-first mindset for managing workouts directly in the browser.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Screenshot
+
+> Add your screenshot here once the UI is ready.
+
+```markdown
+![Gainometer screenshot](./public/screenshot.png)
+```
+
+## Description
+
+Gainometer is an early-stage workout tracking application focused on a local-first experience. It is built with React, TypeScript, React Router v7, ShadCN UI components, and advanced form tooling. The goal is to support workout creation, editing, and tracking in a polished, maintainable frontend architecture while preparing the app for offline persistence and JSON import/export.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Workout editor prototype with React Hook Form and Zod validation
+- Date picker integration and workout metadata management
+- Component-driven UI using ShadCN-ready form and layout primitives
+- Dashboard, workout list, and editor routes with React Router v7
+- Structured form schema for workouts, exercises, and sets
+- Local-first application architecture planned for browser persistence
+- JSON-friendly data model for future import/export workflows
+
+## Tech Stack
+
+- React 19
+- React Router v7
+- TypeScript
+- Vite
+- Tailwind CSS
+- ShadCN UI
+- React Hook Form
+- Zod v3
+- @hookform/resolvers
+- date-fns
+- lucide-react
+- sonner
+
+## Architecture
+
+Gainometer is organized as a client-side React application with route-based page modules and reusable UI components.
+
+- `app/routes/` contains page entry points for `dashboard`, `workoutList`, and `workoutEditor`
+- `app/components/ui/` contains shared design system primitives for buttons, cards, inputs, calendars, tooltips, and more
+- `react-hook-form` and `zod` are used together to keep form validation type-safe and declarative
+- The workout editor is structured around a form schema that models workouts, exercises, labels, and sets
+- The project is architected for future offline-first persistence using browser storage and Dexie.js-style IndexedDB integration
 
 ## Getting Started
 
-### Installation
-
-Install the dependencies:
+### Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
-### Development
-
-Start the development server with HMR:
+### Start development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Navigate to `http://localhost:5173` to open the app.
 
-## Building for Production
-
-Create a production build:
+### Build for production
 
 ```bash
-npm run build
+pnpm build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+### Run production server
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+pnpm start
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Development Notes
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+- The workout editor is the current priority area and is built with a Zod-backed `useForm` schema
+- The app uses ShadCN-style component wrappers for consistent spacing, input state, and accessible patterns
+- Route metadata is defined in each page module with React Router v7
+- Current pages are scaffolded and ready for deeper workout list and dashboard data integration
+- Form state is surfaced with `Controller` for controlled UI components like the date picker
 
-### DIY Deployment
+## Current Status
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Gainometer is in active development. The core editor prototype exists, but dynamic exercise and set management are still being built out. The app currently includes placeholder routing for the workout list and dashboard while the workout form and local persistence architecture are being refined.
 
-Make sure to deploy the output of `npm run build`
+## Roadmap
 
-```
+- Add dynamic workout structure with `useFieldArray` for exercises and sets
+- Implement offline-first persistence with IndexedDB / Dexie.js
+- Build workout list storage and load/save workflows
+- Add JSON import/export for workouts and training history
+- Introduce progression analytics and performance tracking
+- Add exercise categorization, labels, and training program support
+
+## Folder Structure
+
+```text
+├── app/
+│   ├── components/
+│   │   └── ui/            # shared design system primitives
+│   ├── routes/
+│   │   ├── dashboard.tsx
+│   │   ├── workoutEditor.tsx
+│   │   └── workoutList.tsx
+│   ├── root.tsx
+│   └── routes.ts
+├── public/                # static assets
+├── workout.json           # sample workout fixture
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+├── pnpm-lock.yaml
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-## Styling
+## License
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+No license file is included in this repository yet. Add an open source license if you want to share or publish this project.
