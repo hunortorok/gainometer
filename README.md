@@ -2,13 +2,9 @@
 
 A modern workout tracking web app built as a frontend engineering portfolio project. Gainometer is designed to demonstrate type-safe form handling, component-driven UI design, and an offline-first mindset for managing workouts directly in the browser.
 
-## Screenshot
+## Screenshots
 
-> Add your screenshot here once the UI is ready.
-
-```markdown
-![Gainometer screenshot](./public/screenshot.png)
-```
+<img width="1148" height="816" alt="Screenshot 2026-05-31 at 12 01 23" src="https://github.com/user-attachments/assets/6030b298-3c93-4cd4-96c0-bf64c0cb9e49" />
 
 ## Description
 
@@ -121,4 +117,4 @@ Gainometer is in active development. The core editor prototype exists, but dynam
 
 ## License
 
-No license file is included in this repository yet. Add an open source license if you want to share or publish this project.
+No license file is included in this repository yet.
